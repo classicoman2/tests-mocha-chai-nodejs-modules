@@ -5,6 +5,7 @@ prova de tests unitaris amb Mocha
 
 - https://www.taniarascia.com/unit-testing-in-javascript/
 - https://mochajs.org/
+- Aquest tutorial està molt bé per explicar els 3 tipus de test (Unity, Functional i Integration) i després fa un exemple amb **Jest**, que és semànticament més comprensible que Mocha (sense **Chai**) però introdueix més complexitat que en el nivell del Curs, pot ser contraproducent (com, per ex., ho va ser una mica veure **Vue.js** al final de curs i algunes estructures per a les quals no estaven preparats)
 
 Aquesta unitat didàctica consistirà en:
 
