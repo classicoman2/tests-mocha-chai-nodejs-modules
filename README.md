@@ -4,20 +4,30 @@ prova de tests unitaris amb Mocha
 ## Webgrafia
 
 - https://www.taniarascia.com/unit-testing-in-javascript/
-- https://mochajs.org/
-- Aquest tutorial està molt bé per explicar els 3 tipus de test (Unity, Functional i Integration) i després fa un exemple amb **Jest**, que és semànticament més comprensible que Mocha (sense **Chai**) però introdueix més complexitat que en el nivell del Curs, pot ser contraproducent (com, per ex., ho va ser una mica veure **Vue.js** al final de curs i algunes estructures per a les quals no estaven preparats)
-
-Aquesta unitat didàctica consistirà en:
-
-1. Explicar com instal·lar i crear tests unitaris amb Mocha
-2. Passar-lis el codi de la calculadora, amb funcions per a algunes de ses seves operacions
-3. Ells han de:
-  - Instal·lar mocha
-  - Executar npm i crear repositori git
-  - Escriure tests de diversos tipus (Els que jo escriure a enunciat)
-
- CURIOSAMENT, TANIA RASCIA TAMBÉ FA TESTS DAMUNT UNA CALCULADORA,
- https://github.com/taniarascia/calc
+- https://mochajs.org/. Aquest tutorial està molt bé per explicar els 3 tipus de test (Unity, Functional i Integration) i després fa un exemple amb **Jest**, que és semànticament més comprensible que Mocha (sense **Chai**).
+- https://github.com/taniarascia/calc
 
 
- TOTAL:  2h explicare + 3h per la practica  
+## Fer Tests unitaris amb Mocha.
+
+A la carpeta inicial del repositori, executarem això, que iniciarà el package.json,
+
+    npm init
+
+Quan demana l'entorn de test, sortirà per defecte "mocha". 
+
+A continuació, instal·lam `Mocha` a dins la carpeta principal de la pràctica,
+
+    npm install --save-dev mocha
+
+En el directori principal, crear fitxer `test.js` amb les nostres proves test, que executarem amb:
+
+    npm test
+
+### Funcions a testar
+
+Les funcions a testar han d'estar dins un fitxer `.js` separat on s'hi ha d'afegir una linia `module.exports` com:
+
+    module.exports = {
+        suma, resta  // i la resta de funcions a exportar
+    }
