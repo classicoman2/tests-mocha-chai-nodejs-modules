@@ -20,7 +20,7 @@ A continuació, instal·lam `Mocha` a dins la carpeta principal de la pràctica,
 
     npm install --save-dev mocha
 
-En el directori principal, crear fitxer `test.js` amb les nostres proves test, que executarem amb:
+En el directori principal, crear un directori anomenat `test` - no es pot dir altrament - i a dins aficam els fitxers de test, que executarem amb:
 
     npm test
 
