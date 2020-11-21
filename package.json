@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/classicoman2/tests-unitaris-mochajs#readme",
   "devDependencies": {
-    "mocha": "^8.0.1"
-  }
+    "axios": "^0.21.0",
+    "mocha": "^8.0.1",
+    "node-fetch": "^2.6.1"
+  },
+  "dependencies": {}
 }
