@@ -2,7 +2,6 @@
   "name": "tests-unitaris-mochajs",
   "version": "1.0.0",
   "description": "tests unitaris",
-  "main": "test.js",
   "scripts": {
     "test": "mocha"
   },

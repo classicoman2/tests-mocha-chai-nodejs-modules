@@ -18,7 +18,7 @@ describe("axios get sobre httpbin, answer = 42", function () {
 
     //console.log(res);
 
-    assert.equal(res.data.args.answer, 42);
+    assert.strictEqual(res.data.args.answer, '42');
   });
 });
 
@@ -29,7 +29,7 @@ describe("fetch sobre httpbin, answer = 42", function () {
 
       const res = await fetch("http://httpbin.org/get?answer=42");
       const promesa = res.json();
-      promesa.then( (dades) => { assert.equal(dades.args.answer, 42) } );
+      promesa.then( (dades) => { assert.strictEqual(dades.args.answer, '42') } );
   });
 });
   
