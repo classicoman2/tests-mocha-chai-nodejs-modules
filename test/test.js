@@ -1,22 +1,28 @@
 const assert = require('assert')
 const operacions = require('../operacions')
 
-describe('Operacions aritmètiques',  function() {
+describe('OPERACIONS ARITMÈTIQUES',  function() {
 
     it('suma entre 2 operands sencers positius funciona', () => {
         assert.strictEqual( operacions.suma(100,25), 125 )
     })
 
-    it('suma entre 2 operands sencers, positius o negatius, funciona', () => {
-        assert.strictEqual( operacions.suma(100,-25), 75 )
-    })
 
-    it('suma entre un nombre i un string dóna error', () => {
+    it('suma entre un nombre i un string retorna NaN', () => {
         assert.strictEqual( isNaN(operacions.suma(100, 'patata')), true )
     })
 
-    it('suma entre un string i un nombre dóna error', () => {
-        assert.strictEqual( isNaN(operacions.suma('cogombre', 1)), true )
-    })
 
+/*
+    it('La suma entre un nombre en format string i un nombre retorna NaN', () => {
+        assert.strictEqual( isNaN(operacions.suma('5', '12')), true )
+    })  
+*/
+
+
+/*
+    it('La suma entre un nombre en format string i un nombre retorna NaN', () => {
+        assert.strictEqual( operacions.suma('5', '12'), NaN )
+    })
+*/
 })

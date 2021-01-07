@@ -1,25 +1,21 @@
-
-
 /**
- * Funció que suma 2 nombres. Dóna error de tipus calcErr si els valors passats no són numèrics
+ * Funció que suma 2 nombres. 
+ *
+ * @param {number} x
+ * @param {number} y
  * 
- * @param {*} x 
- * @param {*} y 
+ * @returns {number} with the addition of the operands
+ *          {Nan} if any of the operands is not a number
  */
-function suma(x,y) { 
-    
-    if ( isNaN(x) || isNaN(y) ) {
-      return NaN
-    }
+function suma(x, y) {
+  if (isNaN(x) || isNaN(y)) {
+    return NaN;
+  }
 
-    return x + y }
-
-
-module.exports = {
-    suma
+  return x + y;
+//  return parseFloat(x) + parseFloat(y);
 }
 
-
-//Proves que puc realitzar amb la consola
-
-console.log(suma(2,'patata'))
+module.exports = {
+  suma,
+};
