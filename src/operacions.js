@@ -16,6 +16,14 @@ function suma(x, y) {
 //  return parseFloat(x) + parseFloat(y);
 }
 
+
+
+// Proves amb CHAI
+
 module.exports = {
-  suma,
+  suma, creaArrayDe3
 };
+
+function creaArrayDe3(a,b,c) {
+  return [a,b,c];
+}

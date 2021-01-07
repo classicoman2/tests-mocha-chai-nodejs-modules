@@ -1,5 +1,5 @@
 const assert = require('assert')
-const operacions = require('../operacions')
+const operacions = require('../src/operacions')
 
 describe('OPERACIONS ARITMÈTIQUES',  function() {
 
