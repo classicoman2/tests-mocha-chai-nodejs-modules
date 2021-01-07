@@ -1,13 +1,19 @@
+/**
+ *  TESTS AMB CHAI
+ * 
+ *  He emprat la documentació de Chai, https://www.chaijs.com/
+ * 
+ *  assert --> TDD (clàssic)
+ *  expect, should --> BDD (més modern)
+ *
+ */
+
+
 var assert = require("chai").assert;
 var expect = require("chai").expect;
 
 const operacions = require("../src/operacions");
 
-/**
- *  assert --> TDD (clàssic)
- *  expect, should --> BDD (més modern)
- *
- */
 
  /* DESCRIBE: apartat */
 describe("#proves amb creaArrayDe3()", function () {

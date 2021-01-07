@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "tests unitaris",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha test/*"
   },
   "repository": {
     "type": "git",
@@ -12,13 +12,8 @@
   "keywords": [
     "mocha",
     "tests",
-    "js"
+    "chai"
   ],
-  "author": "toni amengual",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/classicoman2/tests-unitaris-mochajs/issues"
-  },
   "homepage": "https://github.com/classicoman2/tests-unitaris-mochajs#readme",
   "devDependencies": {
     "axios": "^0.21.1",
