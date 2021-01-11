@@ -1,33 +1,41 @@
-# tests-unitaris-mochajs
-prova de tests unitaris amb Mocha
+# Tests Unitaris a Front Web
+
+Tests unitaris - síncrons i asíncrons - amb Mocha.js i Chai.js
 
 ## Webgrafia
 
 - [Unit Testing in JavaScript with Mocha, Tania Rascia, 03-27-2018](https://www.taniarascia.com/unit-testing-in-javascript)
-- https://mochajs.org/. Aquest tutorial està molt bé per explicar els 3 tipus de test (Unity, Functional i Integration) i després fa un exemple amb **Jest**, que és semànticament més comprensible que Mocha (sense **Chai**).
+- [Mocha Docs](https://mochajs.org/)
 
 
+## Tests  amb Mocha
 
-## Fer Tests unitaris amb Mocha.
-
-A la carpeta inicial del repositori, executarem això, que iniciarà el package.json,
-
-    npm init
-
-Quan demana l'entorn de test, sortirà per defecte "mocha". 
-
-A continuació, instal·lam `Mocha` a dins la carpeta principal de la pràctica,
+Instal·la `Mocha` com a dependència de desenvolupament,
 
     npm install --save-dev mocha
 
-En el directori principal, crear un directori anomenat `test` - no es pot dir altrament - i a dins aficam els fitxers de test, que executarem amb:
+Crea un directori anomenat `test` en el directori principal i introdueix a dins els fitxers amb els seus test.
 
-    npm test
+En el fitxer `package.json`, afegeix:
 
-### Funcions a testar
+```
+"scripts": {
+  "test": "mocha test"
+}
+```
+> En cas de no tenir fitxer `package.json`, crea'l amb `npm init`.
 
-Les funcions a testar han d'estar dins un fitxer `.js` separat on s'hi ha d'afegir una linia `module.exports` com:
+Per executar els test, 
 
-    module.exports = {
-        suma, resta  // i la resta de funcions a exportar
-    }
+```
+npm test
+```
+
+## Funcions a testar
+
+Conve que les funcions a testar estiguin separades en un mòdul `.js` separat i disponibles amb una linia `module.exports` com:
+
+```
+module.exports = {
+  suma, resta  // funcions a exportar
+}
