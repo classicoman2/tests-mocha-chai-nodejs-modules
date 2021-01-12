@@ -2,6 +2,9 @@
   "name": "tests-unitaris-mochajs",
   "version": "1.0.0",
   "description": "tests unitaris",
+
+  "type": "module",
+
   "scripts": {
     "test": "mocha test"
   },
