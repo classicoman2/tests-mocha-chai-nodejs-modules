@@ -1,6 +1,9 @@
 # Tests Unitaris a Front Web
+## Disclaimer
+Tests unitaris - síncrons i asíncrons - amb Mocha.js i Chai.js per a Node.js (No per a web=
 
-Tests unitaris - síncrons i asíncrons - amb Mocha.js i Chai.js
+Per veure com fer tests amb Mocha amb mòduls ES6, veure [aquest respositori](https://github.com/classicoman2/tests-mocha-ES6-modules).
+
 
 ## Webgrafia
 
